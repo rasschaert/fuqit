@@ -80,7 +80,7 @@ def render_template(path, variables, ext=None):
 
 
 def render_module(name, variables):
-    base, target = tools.find_longest_module(config.app_moudle, name, variables)
+    base, target = tools.find_longest_module(config.app_module, name, variables)
 
     if not (base and target):
         return render_error(404, "Not Found", variables=variables)
